@@ -8,7 +8,7 @@ amount_of_pentesters = 8
 
 
 def simulate_traffic(target_ip):
-    command = ["nmap", target_ip]
+    command = ["nmap", "-Pn", target_ip]
     subprocess.run(command)
 
 
